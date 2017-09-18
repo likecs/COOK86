@@ -1,0 +1,59 @@
+<h3>Read problems statements in <a target="_blank"
+href="http://www.codechef.com/download/translated/COOK86/mandarin/LIKECS02.pdf">mandarin chinese</a>, <a target="_blank"
+href="http://www.codechef.com/download/translated/COOK86/russian/LIKECS02.pdf">russian</a> and <a target="_blank"
+href="http://www.codechef.com/download/translated/COOK86/vietnamese/LIKECS02.pdf">vietnamese</a> as well.</h3>
+
+<h2>Problem Statement</h2>
+<p>Chef Tobby asked Bhuvan to brush up his knowledge of statistics for a test. While studying some distributions, Bhuvan learns the fact that for symmetric distributions, the <a href="https://en.wikipedia.org/wiki/Mean">mean</a> and the <a href="https://en.wikipedia.org/wiki/Median">median</a> are always the same.</p>
+
+<p>Chef Tobby asks Bhuvan out for a game and tells him that it will utilize his new found knowledge. He lays out a total of 10<sup>9</sup> small tiles in front of Bhuvan. Each tile has a distinct number written on it from <b>1</b> to <b>10<sup>9</sup></b>.</p>
+
+<p>Chef Tobby gives Bhuvan an integer <b>N</b> and asks him to choose <b>N distinct tiles</b> and arrange them in a line such that the mean of median of all subarrays lies between <b>[N-1, N+1]</b>, both inclusive. The median of subarray of even length is the mean of the two numbers in the middle after the subarray is sorted</p>
+
+<p>Bhuvan realizes that his book didn’t teach him how to solve this and asks for your help. Can you solve the problem for him?</p>
+
+<p>In case, no solution exists, print <b>-1</b>.</p>
+
+<h3>Input section</h3>
+<p>First line contains, <b>T</b>, denoting the number of test cases.</p>
+
+<p>Each of the next <b>T</b> lines, contain a single integer <b>N</b>.</p>
+
+<h3>Output section</h3>
+<p>If no solution, exists print <b>-1</b>.</p>
+
+<p>If the solution exists, output <b>N</b> space separated integers denoting the elements of the array <b>A</b> such that above conditions are satisfied. In case, multiple answers exist, you can output any one them.</p>
+
+<h3>Input constraints</h3>
+<pre>
+1 ≤ T ≤ 20
+1 ≤ N ≤ 100
+</pre>
+
+<h3>Sample Input</h3>
+<pre>
+3
+1
+2
+3
+</pre>
+
+<h3>Sample Output</h3>
+<pre>
+1
+1 2
+1 2 3
+</pre>
+
+<h3>Explanation</h3>
+<p>For test case <b>3</b>, the subarrays and their median are as follows: </p>
+
+<ol>
+<li><b>{1}</b>, median = <b>1</b></li>
+<li><b>{2}</b>, median = <b>2</b></li>
+<li><b>{3}</b>, median = <b>3</b></li>
+<li><b>{1, 2}</b>, median = <b>1.5</b></li>
+<li><b>{2, 3}</b>, median = <b>2.5</b></li>
+<li><b>{1, 2, 3}</b>, median = <b>2</b></li>
+</ol>
+<p>The mean of the medians is <b>2</b> which lies in the range <b>[2, 4]</b></p>

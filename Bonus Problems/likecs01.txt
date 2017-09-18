@@ -1,0 +1,1 @@
+The smallest string required to ensure that answer is always "yes" is 27, or more specifically "ALPHABET_SIZE + 1". The result is direct application of piegeon hole principle.
